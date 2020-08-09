@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="space">
-      <h1>📔 Your Journals</h1>
+      <h1>📔 Your Projects</h1>
 
       <div id="create-journal-container" class="shadow">
         <!-- fix to stop page from refreshing when hitting enter:
@@ -11,12 +11,12 @@
             v-model="journal.title"
             required
             type="text"
-            placeholder="Name of new journal"
+            placeholder="Name of new Project"
             @keyup.enter="submit()"
           />
           <input
             name="create journal"
-            value="Create Journal"
+            value="Create Project"
             type="button"
             @click="submit()"
           />
@@ -131,8 +131,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 5px;
+  // border-radius: 15px;
   #create-new-journal {
     display: flex;
     flex-direction: column;
@@ -153,8 +153,8 @@ input[type="button"] {
   border: none;
   padding: 15px;
   cursor: pointer;
-  border-radius: 0 0px 15px 15px;
-  background: #a7a7a7;
+  // border-radius: 0 0px 15px 15px;
+  background: lightblue;
 }
 input[type="button"]:hover {
   background: rgb(158, 158, 158);

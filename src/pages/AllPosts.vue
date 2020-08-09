@@ -1,14 +1,14 @@
 <template>
   <main>
     <div class="space">
-      <h1>📝 Your Posts</h1>
+      <h1>📝 Items</h1>
       <div id="create-post-container" class="shadow">
         <form class="new-post">
           <input v-model="post.title" type="text" placeholder="Title" />
-          <textarea
+          <input
             v-model="post.contents"
             type="text"
-            placeholder="What's on your mind?"
+            placeholder="Customer Name"
           />
           <input
             type="button"
